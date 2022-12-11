@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3 mt-4">
+            <div class="rom gt-4 mt-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <h2>Administrator Login</h2>
+                    <h1>Adminstrator Login</h1>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Username</label>
@@ -11,16 +11,13 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Password</label>
-                    <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="password"  class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button (click)="readlogin()" class="btn btn-success" routerLink="/">Login</button>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-4">
+                    <button (click)="readvalue()" class="btn btn-info">Admin Login</button>
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a class="btn btn-link" routerLink="/" role="button">Registration</a>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a class="btn btn-link" routerLink="/" role="button">User Login</a>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-3">
+                    <button class="btn btn-dark" routerLink="/userlogin">UserLogin</button>
                 </div>
             </div>
         </div>
