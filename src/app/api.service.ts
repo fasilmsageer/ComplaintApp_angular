@@ -9,7 +9,7 @@ export class ApiService {
 
 UserLogin=(data:any)=>
 {
-  return this.http.post("http://localhost:8080/userLogin",data)
+  return this.http.post("http://localhost:8080/userlogin",data)
 }
 
 UserRegister=(data:any)=>
