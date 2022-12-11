@@ -9,6 +9,32 @@ import { UserregisterComponent } from './userregister/userregister.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+const myRoute=[
+  {
+    path:"",
+    component:AdminloginComponent
+  },
+  {
+    path:"userlogin",
+    component:UserloginComponent
+  },
+  {
+    path:"userregister",
+    component:UserregisterComponent
+  },
+  {
+    path:"dashboard",
+    component:DashboardComponent
+  },
+  {
+    path:"userprofile",
+    component:UserprofileComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -23,7 +49,10 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.for(myRoute),
+    RouterModule.forRoot(myRoute),
+    FormsModule,
+    HttpClientModule
+
     
   ],
   providers: [],
