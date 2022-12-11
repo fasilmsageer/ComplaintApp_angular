@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UsernavbarComponent } from './usernavbar/usernavbar.component';
 
 const myRoute=[
   {
@@ -44,7 +45,8 @@ const myRoute=[
     UserregisterComponent,
     UserprofileComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    UsernavbarComponent
   ],
   imports: [
     BrowserModule,
