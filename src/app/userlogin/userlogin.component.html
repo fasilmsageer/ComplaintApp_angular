@@ -11,16 +11,17 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Password</label>
-                    <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="password"  class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button (click)="readUserlogin()" routerLink="/" class="btn btn-success">Login</button>
+                    <button (click)="readvalues()" class="btn btn-primary">Login</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a class="btn btn-link" routerLink="/" role="button">Go to User Registration</a>
+                    <button class="btn btn-link" routerLink="/">Go to Admin Login</button>
+                    
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a class="btn btn-link" routerLink="/" role="button">Back to Admin Login</a>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">      
+                    <button class="btn btn-link" routerLink="/userregister">Go to User Resigration</button>
                 </div>
             </div>
         </div>
